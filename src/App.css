@@ -1,0 +1,350 @@
+
+header{
+  height: 8vh;
+  width: auto;
+  background-color: var(--header-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FCECFC;
+}
+header ul{
+  display: flex;
+  list-style: none;
+  gap: clamp(1px,3vw,100px);
+  margin: clamp(5px,30px,40px);
+}
+header li{
+  font-size: clamp(22px,2vw,50px);
+  cursor: pointer;
+  transition: ease .2s;
+}
+header h1{
+  font-size: clamp(25px,3vw,60px);
+  margin: clamp(2px,2vw,30px);
+}
+
+header li:hover{
+  color: #545CEC;
+}
+header button:hover{
+  color: #545CEC;
+}
+ 
+.introduction{
+ 
+  height:100vh;
+align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.textinfo{
+  margin-left: clamp(2px,5vw,100px);
+  color: var(--primary-color);
+}
+.textinfo h3{
+  font-size: clamp(5px,5vw,100px);
+}
+.textinfo h1{
+  font-size: clamp(30px,5vw,100px);
+  
+  animation: ColorChange 4s infinite;
+}
+.textinfo p{
+  font-size: clamp(15px,2vw,100px);
+}
+.textinfo button{
+  margin-top: 10px;
+  width: clamp(5rem,6vw,10rem);
+  height: 2rem;
+  cursor: pointer;
+  color: var(--secondary-color);
+  
+  transition: ease .2s;
+}
+.textinfo button:hover{
+  font-weight: bolder;
+  width: clamp(7rem,7vw,10rem);
+  height: 2.5rem;
+    font-size: clamp(20px,1.2vw,40px) ;
+    color: #545CEC;
+}
+
+@keyframes ColorChange {
+  0%{color:#3D3B40; }
+  50%{color: #424af3;}
+  100%{color: #3D3B40;}
+}
+.title{
+   height:100vh;
+  
+}
+.titlehead{
+  text-align: center;
+  font-size: clamp(1.5rem,3vw,10rem);
+  color: var(--primary-color);
+}
+.about{
+  display: flex;
+  flex-direction: row;
+  margin: clamp(2px,2vw,100px);
+  align-items: center;
+ 
+  gap: 1.5rem ;
+}
+.img{
+  display: flex;
+  justify-content: center;
+  width: clamp(2rem,40vw,100rem);
+ 
+  align-items: center;
+}
+.img img{
+  height: auto;
+  width: clamp(12rem,30vw,100rem);
+}
+.textAbout{
+  color: var(--primary-color);
+  width: clamp(1rem,60vw,100rem);
+  
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: clamp(2px, 2vw,10px);
+}
+.textAbout h1{
+  font-size: clamp(1rem,4vw,10rem);
+  transition: ease .2s;
+}
+.textAbout h2{
+  font-size: clamp(10px, 3vw,40px);
+}
+.textAbout p{
+  font-size: clamp(10px,1.5vw,30px);
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  font-size: clamp(1rem,2vw,3rem);
+ 
+}
+.name{
+  animation: ColorChange 4s infinite;
+}
+.links a{
+  margin-top: 10px;
+   color: var(--primary-color);
+   transition: ease .3s;
+}
+.links a:hover{
+  color: #545CEC;
+  font-size: clamp(2rem,2.5vw,3.5rem);
+}
+.Skills{
+  height: 110vh;
+    
+
+}
+
+.cardContainer{
+  display: grid;
+  grid-template-columns: repeat(3,16rem);
+  gap:clamp(.5rem , 5vw, 20rem);
+  justify-content: center;
+  
+  margin-top:2rem;
+}
+.card{
+  padding:1vw;
+  height: 20rem;
+  border-radius: 10px;
+  background-color: #545CEC;
+}
+.icon{
+display: flex;
+align-items: center;
+justify-content: center;
+  text-align: center;
+background-color: var(--background-color);
+ border-radius: 10px;
+  color: var(--primary-color);
+  font-size: clamp(5rem,5vw, 20rem);
+  width: 14rem;
+  height:10rem;
+}
+
+.textBoxCard{
+ margin: 5px;
+  color: #FCECFC;
+  height: clamp(2rem,30vw,5rem);
+  padding: 2px;
+}
+.textBoxCard h1{
+  margin-top: 5px;
+  font-size: clamp(20px,2vw,100px)
+}
+.textBoxCard p{
+  font-size: clamp(10px, 2vw,20px);
+}
+
+.projects{
+  height: 100vh;
+  
+}
+.projectAlbum{
+  margin-top:2rem ;
+  display: flex;
+  justify-content: center;
+  
+  flex-direction: column;
+  gap: clamp(16px, 1vw, 30px);
+  
+}
+.projectCard img{
+  width: clamp(13rem, 20vw, 30rem);
+  height:auto;
+  image-rendering: optimizeSpeed;
+  border-radius:10px ;
+  border: #545CEC 3px solid;
+}
+.projectCard{
+  display: flex;
+  margin: 10px;
+}
+.textProject{
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+  gap: 5px;
+  color: var(--primary-color);
+}
+.textProject h1{
+  font-size: clamp(15px, 3vw,  50px);
+  
+}
+.textProject p{
+  font-size: clamp(10px, 1.5vw,50px);
+}
+.textProject button{
+  margin-top: 10px;
+  width: clamp(75px,10vw,110px);
+  height: clamp(25px,5vh,35px);
+}
+.textProject button:hover{
+ transition: ease .2s;
+  width: clamp(80px,10vw,115px);
+  height: clamp(30px,5vh,40px);
+  
+  
+}
+.textProject a{
+ color: var(--secondary-color);
+ text-decoration: none;
+ transition: ease .2s;
+ font-weight: bold;
+ font-size: clamp(13px,2vw,20px);
+}
+.textProject a:hover{
+  color: #545CEC;
+  
+}
+.check{
+  
+  color: var(--ligthbulb);
+}
+.light{
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  opacity: 0;
+  
+}
+.con{
+  right: 1.5rem;
+  position: absolute;
+}
+.contact{
+  height: 70vh;
+
+}
+.containerContact{
+  height: 60vh;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ justify-content: center;
+ gap: 5rem;
+}
+.info{
+  display: flex;
+  gap: 2rem;
+}
+.info input{
+  width: 300px;
+  height: 30px;
+}
+.message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.message input{
+ width: 500px;
+ height: 50px;
+ text-align: left;
+  font-size: clamp(10px, 1.2vw, 30px);
+}
+.message button{
+  width: 10rem;
+  height: 2rem;
+  font-size: clamp(30px, 2vw,30px);
+  cursor: pointer;
+  text-align: center;
+  border: none;
+  color: var(--primary-color);
+  background-color: transparent;
+}
+.message button:hover{
+  width: 10.5rem;
+  height: 2.5rem;
+  color: var(--secondary-color);
+  font-size: clamp(25px, 2.5vw,35px);
+}
+.contacts{
+  display: flex;
+ gap: 10px;
+  font-size: clamp(10px,4vw,30px);
+  display: flex;
+  flex-direction: column;
+}
+.socials{
+  display: flex;
+   gap: 20px;
+}
+.small{
+  font-size: 15px;
+  color: var(--primary-color);
+  text-align: center;
+}
+.contacts a{
+  color: var(--secondary-color);
+}
+.footer{
+  height: 20vh;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right:20px;
+  align-items: center;
+  display: flex;
+  color: white;
+  background-color: var(--header-color);
+}
+.footer p{
+  font-size: clamp(10px,2vw,20px);
+}
+.footer h1{
+  font-size: clamp(20px,2vw,40px);
+}

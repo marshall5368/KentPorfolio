@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Londrina+Shadow&family=Madimi+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    pad: 0;
+    margin: 0;
+    font-family: "Urbanist", sans-serif;
+    
+}
+
+:root{
+    --primary-color:#3D3B40;
+    --secondary-color:#545CEC;
+    --background-color:#f6f6f6;
+    --header-color:#3D3B40;
+    --ligthbulb:#f6f6f6;
+  } 
+  
+  [data-theme="dark"]{
+    --primary-color:#f6f6f6;
+    --secondary-color:#545CEC;
+    --background-color:#3D3B40;
+    --header-color:#545CEC;
+    --ligthbulb:#FFAF45;
+  }
+body{
+    background-color:var(--background-color);
+}
+@media screen and (Max-width:1200px)  {
+    .projects{
+        height: 90vh;
+    }
+    .title{
+        height: 90vh;
+    }
+    .cardContainer{
+        grid-template-columns: repeat(3,16rem);
+    }
+    .icon{
+        width: 14.5rem;
+        height: 10rem;
+    }
+}
+@media screen and (Max-width:800px)  {
+    .projects{
+        height: 80vh;
+    }
+    .title{
+        height: 80vh;
+    }
+    .cardContainer{
+        grid-template-columns: repeat(3,12rem);
+    }
+    .icon{
+        width: 11rem;
+        height: 10rem;
+    }
+}
+@media screen and (Max-width:740px)  {
+    .textinfo{
+        margin-bottom: 10rem
+    }
+    .introduction{
+        height: 95vh;
+    }
+    .projects{
+        height: 90vh;
+    }
+    .title{
+        height: 80vh;
+    }
+    .Skills{
+        height: 90vh;
+    }
+    .card{
+        height: 15rem;
+    }
+    
+    
+}
+@media screen and (Max-width:480px){
+    .introduction{
+        height: 70vh;
+    }
+    .title{
+        height: 50vh;
+    }
+    .card{
+        height: 15rem;
+    }
+    .Skills{
+        height: 80vh;
+    }
+    .projects{
+        height: 70vh;
+    }
+    .cardContainer{
+        grid-template-columns: repeat(3,7rem);
+    }
+    .cardContainer{
+        grid-template-columns: repeat(3,7rem);
+    }
+    .icon{
+        width: 6.5rem;
+        height: 8rem;
+    }
+    .containerContact{
+        gap: 1rem;
+    }
+    .info input{
+        width: 150px;
+    }
+    .message input{
+        width: 300px;
+    }
+    .message button{
+        width: 100px;
+    }
+}
